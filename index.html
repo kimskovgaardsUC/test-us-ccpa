@@ -7,6 +7,17 @@
 
     <script src="https://web.cmp.usercentrics.eu/gpp/stub.js"></script>
     <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="NYoi4KnGTxh-D-" async></script>
+    <!-- GPP eventlistener -->
+    <script>
+__gpp("addEventListener", (data, success) => {
+  if (success) {
+    console.log("gppdata:", data);
+  } else {
+    console.log("gpp error");
+  }
+});
+</script>
+
     
     <!-- Google Analytics -->
     <script type="text/plain" data-usercentrics="Google Analytics">
